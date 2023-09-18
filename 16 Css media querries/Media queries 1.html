@@ -1,0 +1,52 @@
+<!-- media queries is a tool by which you can define the arrangement of your element 
+in different sizes of screens -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        background-color: aqua;
+        height: 400px;
+        width: 400px;
+        border: solid 2px red;
+    }
+    /* example 1 */
+    /* max width defines if the size of screen gets less then 500 the color will change 
+    to red from aqua and if it was set to min-width and if the size of screen was expanded color changes  */
+    @media(max-width:500px){
+        .box{
+            background-color: red;
+        }
+    }
+    /* example 2 */
+
+    /* int this the fuchsia color will be retained in all the time except when the 
+    size is between 300-500 in this range the color will change to blue  */
+    .car{
+        background-color: fuchsia;
+        border: solid black 2px;
+        height: 400px;
+        width: 400px;
+        margin: 50px;
+    }
+    @media(min-width:300px) and (max-width:500px){
+        .car{
+            background-color: blue;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello guys
+    </div>
+    <div class="car">
+        Davesh here
+    </div>
+</body>
+</html>

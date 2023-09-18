@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="External.css">
+
+    <!-- this here we do is internal css -->
+
+    <style>
+        p{
+            background-color: yellow !important;
+        }
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+
+<!-- for example lets say i make <p> bg color red in inline and yellow in internal css
+then inline will be considered and it will be colored red bcz inline will be considered 
+and if no color is mentioned for other paragraphs p then internal will takeover and yellow will appere -->
+
+<!-- but if you want to make internal more significant and make everthing of that color even if you have an inline
+element you use !important tag -->
+
+<body>
+    <h1>Welcome to KIIT</h1>
+
+    <!-- here we create inline css -->
+    <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Consequuntur a, cupiditate ipsum qui porro ducimus modi dolores 
+     voluptate libero sapiente dolorem quae eius ut blanditiis molestia
+     s, nesciunt similique odio. Similique officia perferendis ad earum
+      aliquam voluptas consequatur voluptatem possimus adipisci rerum fugit, 
+      corporis totam pariatur delectus. Ipsum earum quidem sunt?</p>
+
+     <p style="background-color: chartreuse;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus 
+        ipsam explicabo soluta nulla minima sed inventore doloremque blanditiis 
+        pariatur saepe itaque harum voluptatum quis, cupiditate, ipsum, facilis expedita s
+        it! Earum officiis, sequi necessitatibus suscipit, quasi obcaecati repudiandae nul
+        la eaque tenetur nesciunt nihil modi voluptatem? Earum pariatur culpa fuga aliquid 
+        tempore atque optio laborum sed enim! Reiciendis nulla vel quae magnam natus? Nobi
+        s consectetur recusandae repellendus numquam natus, blanditiis dolores nostrum
+         sit in optio eius, fugit fuga dicta facilis dolorem ipsa? Qui eius officia, quis accusamus seq
+         ui ea fugiat illum sapiente iste ut in praesentium mollitia repellat provident rerum sint? Odit.
+         </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam quis excepturi a ut nam veritatis
+         animi, reprehenderit repellendus labore itaque molestiae minima enim quas. Aliquid recusandae alias
+          perferendis facilis ad magni earum exercitationem hic molestias explicabo. Delectus dolorem atque 
+          molestias laborum illo repellendus itaque dolores! Explicabo veritatis voluptatum ipsam.</p>
+
+    <footer>I am footer</footer>
+    </body>
+</html>

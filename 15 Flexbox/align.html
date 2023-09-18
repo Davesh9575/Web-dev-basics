@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* so the work of flex was just to make it a good flex ui and the justify was just moving 
+        it horizontally and now with the use of align we can move vertically too for example the 
+        flex direction is set row so justify will move in that row which is horizontal and 
+        the align will be the vertical axis so  we have access to all 4 axis now 
+        in short ->Flex is for making the ui best optimized 
+                 ->if flex direction is set to row the justify will be the horizontal and align 
+                 will be the vertical 
+                 ->if flex direction is set to column the justify will be the vertical and align 
+                 will be the horizontal  */
+        .con{
+            background-color:beige;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            height: 1200px;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align item always works in vertical axis  */
+            /* and if you want to place something in the exact center of the page use both justify center 
+            and align center it will be at exact center */
+            align-items: center;
+
+            /* so when you squeezw the size in inspect the boxes will be placed at very bottom 
+            so to make the just above each other we use align content start  */
+
+            /* align-content: start; */
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color:aqua ;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

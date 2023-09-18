@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+        }
+        img{
+            margin: 10px;
+            border: 4px solid red;
+        }
+        /* property of img is static so it cant be moved just like a block element takes the whole block 
+        but a block element can be converted into inline similar way img can be converted to relative from static */
+
+        /* any image is by default static so without declaring it relative no changes in the position/co-ordinate will be 
+        seen to make changes in position make position relative */
+
+        /* and all of these are happening relative to the web page screen /current window */
+
+        .img2{
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="download.jpeg" alt="1" width="150px" height="150px" class="img1">
+        <img src="download (1).jpeg" alt="2" width="150px" height="150px" class="img2">
+        <img src="download (2).jpeg" alt="3" width="150px" height="150px" class="img3">
+        <img src="channels4_profile.jpg" alt="4" width="150px" height="150px" class="img4">
+    </div>
+</body>
+</html>

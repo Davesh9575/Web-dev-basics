@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email">
+        <br><br>
+        <label for="ph">Phone:</label>
+        <br>
+        <input type="tel" id="ph">
+        <br><br>
+        <label for="res">Resume:</label>
+        <br>
+        <input type="file" id="res">
+        <br><br>
+        
+        <label for="cnt">Experience(years):</label>
+        <br>
+        <input type="number" id="cnt" name="cnt" min="0" max="50">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+            
+            <label for="chk">HTML</label>
+            <input type="checkbox" name="chk" id="chk">
+    
+            <br>
+    
+            <label for="css">CSS</label>
+            <input type="checkbox" name="css" id="css">
+    
+            <br>
+    
+            <label for="jsr">JSR</label>
+            <input type="checkbox" name="jsr" id="jsr">
+       </fieldset>
+
+       <br>
+       <label for="edu">Highest Education:</label>
+       <br/>
+       <select name="Education" id="edu">
+        <option value="High School">High School</option>
+        <option value="Associates degree">Associates degree</option>
+        <option value="Btech">Btech</option>
+        <option value="Masters">Masters</option>
+        <option value="phD">phD</option>
+       </select>
+       <br>
+       <br>
+       
+       <fieldset>
+        <legend>Availability:</legend>
+       <label for="full">Full-time</label>
+       <br>
+       <input type="radio" id="full" name="r1">
+       <br>
+       <label for="part">Part-time</label>
+       <br>
+       <input type="radio" id="part" name="r1">
+    </fieldset>
+        <br>
+        <label for="txt">Additional Comments:</label>
+    <br>
+        <textarea name="text" id="txt" cols="30" rows="10"></textarea>
+<br>
+
+<input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

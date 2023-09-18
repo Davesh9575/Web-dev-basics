@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* so the work of flex was just to make axis horizontal or vertical 
+        and the justify will move the object in that axis accordingly */
+        
+        .con{
+            background-color:beige;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+           flex-direction: row;
+           height: 500px;
+           /* this places the elements to the center but i can also do at start ,end, 
+           space between, space around etc */
+           /* i am doing it in row as flex direction is set to row but i can also do same in coloumn */
+            justify-content: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color:aqua ;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

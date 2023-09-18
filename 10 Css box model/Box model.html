@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+    a box model contains 4 part that are 1)content (what you write)
+                                         2)padding (gap between the border and content)
+                                         3)border (which had content inside itself)
+                                         4)margin (the gap that you create ouside the border between boxes or screen) -->
+
+
+    <!-- to make a universal selector use *{} and it will set that for each and everything in your web page -->
+
+
+    <style>
+        /* by useing the code below everything will have zero space between eachother but before using that comment the 
+        margines and paddings used below or else it will colaps and the below given data will be implimented*/
+        /* 
+        *{
+            padding: 0;
+            margin: 0;
+        } 
+        */
+        .one{
+            background-color: aqua;
+            border: solid 2px;
+
+            /* padding is the gap between border and the content and you can increase 
+            it individually or same by all the side  */
+
+            padding: 40px;
+        }
+        .two{
+            background-color: palevioletred;
+            border: solid 2px;
+
+            /* margin is the distance or gap outside the border that is gap from the left screen 
+            right screen top bottom or between the 2 boxes  */
+            
+            margin: 40px;
+        }
+        .three{
+            background-color: greenyellow;
+            border: solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum culpa 
+    quis enim eveniet repellat aperiam doloribus ipsam sint veniam voluptatum,
+    nulla aliquid rem illum quia cum fugit nihil eum et nostrum eius fuga! Itaque
+    voluptatibus a eius dolore vitae cumque?
+</p>
+
+<p class="two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum culpa 
+    quis enim eveniet repellat aperiam doloribus ipsam sint veniam voluptatum,
+    nulla aliquid rem illum quia cum fugit nihil eum et nostrum eius fuga! Itaque
+    voluptatibus a eius dolore vitae cumque?
+</p>
+
+<p class="three">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum culpa 
+    quis enim eveniet repellat aperiam doloribus ipsam sint veniam voluptatum,
+    nulla aliquid rem illum quia cum fugit nihil eum et nostrum eius fuga! Itaque
+    voluptatibus a eius dolore vitae cumque?
+</p>
+
+
+</body>
+</html>

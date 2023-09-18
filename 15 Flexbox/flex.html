@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex is nothing new just how we used block and inline but those are not good for good use so this 
+        is same this and used for just placement of elements */
+        .con{
+            background-color:beige;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+
+            /* to create a flex we have to just use display flex tag and we now have the flex container 
+            and the flex elements here con is container and 4 boxes are flex items  */
+
+            /* by default display flex will make it in a single row dosent matter how it was arranged */
+           display: flex;
+         /* but  you can change the direction from row to coloumn,reverse and much more by commant flex direction */
+          flex-direction: row;
+          /* now when we see the some site in phone or pc its content dosent change or text dosent squeeze 
+          so to make it that way we use wrap  */
+          /* so whenever you squeeze the size of screen in inspect insted of shrinking the content 
+          it retains the same size and the boxes move to bottom  */
+          flex-wrap: wrap;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        #box1{
+            background-color:aqua ;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

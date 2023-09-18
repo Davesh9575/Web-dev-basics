@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px red solid;
+            width: 25%;
+        }
+
+        /* here first the parent is assigned with the color blanchedalmond and then the 
+        child is overlapped with aqua color but only 50% of the size of the parent
+         */
+        .parent{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+        }
+        .child{
+            border: 2px solid green;
+            background-color: aqua;
+            width: 50%;
+        }
+
+        /* vh is viewport height(full screen height) and vw is viewport width so you can set the 
+        size in this way also  */
+         
+        .hey{
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            height: 100vh;
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Welcome to spotify
+    </div>
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+
+    <div class="hey">
+        hello guys
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- in absolute positioning the top,left,bottom,right these all are applied with respect to 
+    the nearest closest ancestor  -->
+
+    <style>
+        div{
+            border: 2px black solid;
+        }
+        img{
+            margin: 10px;
+        }
+        .img2{
+            position: absolute;
+            top: 100px;
+        }
+        /* just to make the page longggg so we can scroll down */
+        .di{
+            height: 4000px;
+            background-color: beige;
+        }
+
+        /* this fixes the position and it will move with the screen fixed at the same position no matter whereever you
+        scroll fixed will me fixed*/
+        .img4{
+            position: fixed;
+
+        }
+        /* as you scroll down to red the sticky will dissappere bcz the sticky is fixed to its 
+        container and wont move more than that */
+        .img1{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: crimson;
+            height: 5000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="di">
+        <img src="channels4_profile.jpg" alt="1" height="150px" width="150px" class="img1">
+        <img src="download (1).jpeg" alt="2" height="150px" width="150px" class="img2">
+        <img src="download (2).jpeg" alt="3" height="150px" width="150px" class="img3">
+        <img src="download.jpeg" alt="4" height="150px" width="150px" class="img4">
+    </div>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>
